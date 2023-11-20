@@ -6,7 +6,7 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 09:50:45 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/15 11:43:04 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/18 16:17:08 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,12 @@ t_list	*ft_lstnew(void *content)
 {
 	t_list	*node;
 
-	node = malloc(sizeof(t_list));
+	if (!content)
+		return (NULL);
+	node = (t_list *)malloc(sizeof(t_list));
+	if (!node)
+		return (NULL);
 	node->content = content;
-	node->next = 0;
+	node->next = NULL;
 	return (node);
 }

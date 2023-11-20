@@ -6,7 +6,7 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:33:24 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/15 11:42:01 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/19 20:05:50 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,4 +56,13 @@ void	*ft_memmove(void *dst, const void *src, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_itoa(int n);
 char	**ft_split(const char *s, char c);
+t_list	*ft_lstnew(void *content);
+void	ft_lstadd_front(t_list **lst, t_list *newx);
+int	ft_lstsize(t_list *lst);
+t_list	*ft_lstlast(t_list *lst);
+void	ft_lstadd_back(t_list **lst, t_list *newx);
+void ft_lstdelone(t_list *lst, void (*del)(void *));
+void ft_lstclear(t_list **lst, void (*del)(void *));
+
+
 #endif
