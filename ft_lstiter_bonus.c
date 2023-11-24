@@ -6,18 +6,18 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/22 10:34:41 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/22 13:28:15 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/24 22:12:40 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
 
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	t_list	*v;
 
+	if (!lst || !f)
+		return ;
 	v = lst;
 	while (v != NULL)
 	{

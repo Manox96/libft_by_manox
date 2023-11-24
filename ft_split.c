@@ -6,11 +6,12 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 21:18:57 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/15 11:22:51 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/24 22:33:16 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <sys/_types/_null.h>
 
 static char	**freeit(char **s)
 {
@@ -79,6 +80,8 @@ char	**ft_split(char const *s, char c)
 
 	i = 0;
 	start = 0;
+	if (!s)
+		return (NULL);
 	countw = countword(s, c);
 	all = malloc(sizeof(char *) * (countw + 1));
 	if (!all)

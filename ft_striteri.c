@@ -6,12 +6,11 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 21:07:37 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/20 09:31:32 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/24 18:24:04 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {

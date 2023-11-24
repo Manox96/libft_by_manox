@@ -6,7 +6,7 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 12:51:28 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/06 08:52:30 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/24 19:31:36 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ void	*ft_calloc(size_t count, size_t size)
 {
 	unsigned char	*tab;
 
+	if (count * size > SIZE_MAX)
+		return (NULL);
 	tab = (void *)malloc(((count * size) * sizeof(char)));
 	if (!tab)
 		return (NULL);

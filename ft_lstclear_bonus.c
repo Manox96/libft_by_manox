@@ -6,7 +6,7 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/18 14:48:49 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/22 10:31:22 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/24 22:17:09 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
 	t_list	*nextnode;
 
-	if ((*lst) == NULL)
+	if (!lst || !del)
 		return ;
 	nextnode = *lst;
 	while (nextnode != NULL)

@@ -6,12 +6,11 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/17 17:53:31 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/22 09:28:18 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/24 19:31:04 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 t_list	*ft_lstlast(t_list *lst)
 {

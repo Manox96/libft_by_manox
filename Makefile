@@ -1,3 +1,15 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2023/11/24 15:35:28 by aennaqad          #+#    #+#              #
+#    Updated: 2023/11/24 23:17:16 by aennaqad         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
 SRCS = ft_memset.c ft_bzero.c ft_memcpy.c ft_memmove.c ft_memchr.c \
           ft_memcmp.c ft_strlen.c ft_isalpha.c ft_isdigit.c ft_isalnum.c \
           ft_isascii.c ft_isprint.c ft_toupper.c ft_tolower.c ft_strchr.c \
@@ -23,23 +35,23 @@ OBJS = $(SRCS:.c=.o)
 OBJS_BNS = $(SRCS_B:.c=.o)
 NAME = libft.a
 
-%.o: %.c
-	$(CC) $(FLAGS) -c $< -o $@ -I .
-
-$(NAME): $(OBJS)
-	ar -rcs $(NAME) $(OBJS)
+%.o: %.c libft.h
+	$(CC) $(FLAGS) -c $< -o $@
 
 all: $(NAME)
+
+$(NAME): $(OBJS)
+	ar -rsc $(NAME) $(OBJS)
 
 clean:
 	$(RM) $(OBJS) $(OBJS_BNS)
 
 fclean: clean
-	$(RM) $(NAME) $(OBJS) $(OBJS_BNS)
+	$(RM) $(NAME)
 
 re: fclean all
 
 bonus : $(OBJS_BNS)
-	ar -rcs $(NAME) $(CC) $(OBJS_BNS)
+	ar -rcs $(NAME) $(OBJS_BNS)
 
 .PHONY: all clean fclean re
