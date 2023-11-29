@@ -6,7 +6,7 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:33:24 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/22 13:28:48 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/29 22:41:51 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,6 @@ int		ft_tolower(int c);
 int		ft_isascii(int c);
 int		ft_atoi(const char *str);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
-void	*memcpy(void *dst, const void *src, size_t n);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
@@ -57,10 +56,10 @@ char	*ft_strrchr(const char *s, int c);
 char	*ft_itoa(int n);
 char	**ft_split(const char *s, char c);
 t_list	*ft_lstnew(void *content);
-void	ft_lstadd_front(t_list **lst, t_list *newx);
+void	ft_lstadd_front(t_list **lst, t_list *newa);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
-void	ft_lstadd_back(t_list **lst, t_list *newx);
+void	ft_lstadd_back(t_list **lst, t_list *newa);
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));

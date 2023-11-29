@@ -6,9 +6,10 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 19:46:24 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/10/31 21:27:12 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/29 00:14:37 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_toupper(int c)

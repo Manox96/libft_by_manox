@@ -6,7 +6,7 @@
 #    By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/11/24 15:35:28 by aennaqad          #+#    #+#              #
-#    Updated: 2023/11/24 23:17:16 by aennaqad         ###   ########.fr        #
+#    Updated: 2023/11/29 15:38:41 by aennaqad         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -29,19 +29,20 @@ SRCS_B = ft_lstnew_bonus.c \
                ft_lstmap_bonus.c
 
 CC = cc
-FLAGS = -Wall -Werror -Wextra
+CFLAGS = -Wall -Werror -Wextra
 RM = rm -rf
 OBJS = $(SRCS:.c=.o)
 OBJS_BNS = $(SRCS_B:.c=.o)
 NAME = libft.a
+AR = ar -rcs
 
 %.o: %.c libft.h
-	$(CC) $(FLAGS) -c $< -o $@
+	$(CC) $(CFLAGS) -c $< -o $@
 
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	ar -rsc $(NAME) $(OBJS)
+	$(AR) $(NAME) $(OBJS)
 
 clean:
 	$(RM) $(OBJS) $(OBJS_BNS)
@@ -52,6 +53,6 @@ fclean: clean
 re: fclean all
 
 bonus : $(OBJS_BNS)
-	ar -rcs $(NAME) $(OBJS_BNS)
+	$(AR) $(NAME) $(OBJS_BNS)
 
 .PHONY: all clean fclean re

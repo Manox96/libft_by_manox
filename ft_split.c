@@ -6,12 +6,11 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/14 21:18:57 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/24 22:33:16 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/28 22:09:58 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <sys/_types/_null.h>
 
 static char	**freeit(char **s)
 {

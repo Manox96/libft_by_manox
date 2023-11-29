@@ -6,7 +6,7 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/01 17:42:40 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/10 22:12:56 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/29 00:22:52 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,29 +14,19 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	unsigned char	*d;
-	unsigned char	*s;
-	size_t			i;
+	char	*d;
+	char	*s;
 
-	d = (unsigned char *)dst;
-	s = (unsigned char *)src;
-	i = 0;
+	d = (char *)dst;
+	s = (char *)src;
 	if (!dst && !src)
 		return (NULL);
+	if (dst == src)
+		return ((void *)src);
 	if (d > s)
-	{
-		d += len;
-		s += len;
 		while (len--)
-			*(--d) = *(--s);
-	}
+			d[len] = s[len];
 	else
-	{
-		while (len--)
-		{
-			*(d + i) = *(s + i);
-			i++;
-		}
-	}
-	return (d);
+		ft_memcpy(dst, src, len);
+	return (dst);
 }

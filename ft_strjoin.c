@@ -6,7 +6,7 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 09:01:24 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/24 19:30:36 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/11/29 00:14:00 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,9 +23,9 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	if (!s1 && !s2)
 		return (NULL);
 	if (!s1)
-		return ((char *)s2);
+		return (ft_strdup(s2));
 	if (!s2)
-		return ((char *)s1);
+		return (ft_strdup(s1));
 	joined = malloc(((ft_strlen(s1) + ft_strlen(s2)) + 1) * sizeof(char));
 	if (!joined)
 		return (NULL);
