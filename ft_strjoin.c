@@ -6,13 +6,13 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/08 09:01:24 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/29 00:14:00 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/12/01 15:57:33 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(const char *s1, const char *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	size_t	i;
 	size_t	j;

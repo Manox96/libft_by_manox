@@ -6,7 +6,7 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/31 16:33:24 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/29 22:41:51 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/12/01 15:58:34 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -43,9 +43,9 @@ char	*ft_strchr(const char *s, int c);
 char	*ft_strdup(const char *s1);
 void	*ft_calloc(size_t count, size_t size);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
-char	*ft_strjoin(const char *s1, const char *s2);
-char	*ft_strtrim(const char *s1, const char *set);
-char	*ft_strmapi(const char *s, char (*f)(unsigned int, char));
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
@@ -54,7 +54,7 @@ void	ft_putnbr_fd(int n, int fd);
 void	*ft_memmove(void *dst, const void *src, size_t len);
 char	*ft_strrchr(const char *s, int c);
 char	*ft_itoa(int n);
-char	**ft_split(const char *s, char c);
+char	**ft_split(char const *s, char c);
 t_list	*ft_lstnew(void *content);
 void	ft_lstadd_front(t_list **lst, t_list *newa);
 int		ft_lstsize(t_list *lst);

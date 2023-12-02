@@ -6,7 +6,7 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/03 17:04:20 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/24 18:10:09 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/12/01 15:23:25 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ static int	hand(int s)
 int	ft_atoi(const char *str)
 {
 	int			i;
-	long long	s;
+	int			s;
 	long long	r;
 
 	r = 0;

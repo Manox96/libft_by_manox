@@ -6,13 +6,13 @@
 /*   By: aennaqad <aennaqad@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 11:34:08 by aennaqad          #+#    #+#             */
-/*   Updated: 2023/11/15 11:41:49 by aennaqad         ###   ########.fr       */
+/*   Updated: 2023/12/01 15:58:45 by aennaqad         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strmapi(const char *s, char (*f)(unsigned int, char))
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	size_t			len;
 	char			*k;
